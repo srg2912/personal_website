@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OKCupid Gender Prediction - Repository</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body class="lang-it">
+<header>
+    <div class="logo">
+        <strong>SERGIO AVALOS</strong>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html" class="it">Home</a>
+        <a href="index.html" class="en">Home</a>
+        <a href="experience.html" class="it">Esperienza</a>
+        <a href="experience.html" class="en">Experience</a>
+        <a href="studies.html" class="it">Studi</a>
+        <a href="studies.html" class="en">Studies</a>
+        <a href="certifications.html" class="it">Certificazioni</a>
+        <a href="certifications.html" class="en">Certifications</a>
+        <div class="dropdown">
+            <a href="#" class="it">Repository ▼</a>
+            <a href="#" class="en">Repositories ▼</a>
+            <div class="dropdown-content">
+                <a href="acousticmatch.html">AcousticMatch</a>
+                <a href="telegramchatbot.html">Telegram ChatBot</a>
+                <a href="animalink.html">AnimaLink</a>
+                <a href="okcupid.html">OKCupid Gender Prediction</a>
+            </div>
+        </div>
+    </nav>
+    <button id="lang-toggle">ENG</button>
+</header>
+<main>
+    <section class="repo-header">
+        <img src="img/repos/ogp.png" alt="OKCupid Gender Prediction">
+        <h1>OKCupid Gender Prediction</h1>
+        <p class="tech-stack">Tech: Python, Pandas, Scikit-Learn, Machine Learning</p>
+        <a href="https://github.com/srg2912/Predicting-Gender-from-OkCupid-Profiles/tree/main" target="_blank" class="cert-link">View on GitHub</a>
+    </section>
+    
+    <section class="markdown-body">
+        <div class="en">
+            <h2>Project Overview</h2>
+            <p>This project aims to predict the gender of users from the OKCupid dataset using machine learning models. The dataset includes demographic, lifestyle, and preference-related features. The analysis explores various classification models to determine the best-performing approach.</p>
+            
+            <h3>Preprocessing Steps</h3>
+            <ul>
+                <li><strong>Data Cleaning:</strong> Grouped similar categorical values, handled missing values.</li>
+                <li><strong>Encoding & Scaling:</strong> One-hot encoded categorical features and standardized numerical features.</li>
+                <li><strong>Hyperparameter Tuning:</strong> Used GridSearchCV, RandomizedSearchCV, and BayesSearchCV.</li>
+            </ul>
+
+            <h3>Models Used & Results</h3>
+            <table>
+                <tr><th>Model</th><th>Validation Score</th><th>Test Score</th><th>Training Time</th></tr>
+                <tr><td>Logistic Regression</td><td>0.8653</td><td>0.8778</td><td>21s</td></tr>
+                <tr><td>Decision Tree</td><td>0.8499</td><td>0.8567</td><td>22.3s</td></tr>
+                <tr><td>Random Forest</td><td>0.8590</td><td>0.8691</td><td>1m 47.3s</td></tr>
+                <tr><td>SVM</td><td>0.8662</td><td>0.8809</td><td>2m 52.6s</td></tr>
+            </table>
+
+            <p><strong>Key Findings:</strong> SVM achieved the highest accuracy (0.8809) but was computationally expensive. Logistic Regression performed almost as well (0.8778) while being significantly faster.</p>
+        </div>
+        <div class="it">
+            <h2>Panoramica del Progetto</h2>
+            <p>Questo progetto mira a prevedere il genere degli utenti dal dataset di OKCupid utilizzando modelli di machine learning. L'analisi esplora vari modelli di classificazione per determinare l'approccio con le migliori prestazioni in base a dati demografici e stile di vita.</p>
+            
+            <h3>Fasi di Pre-elaborazione</h3>
+            <ul>
+                <li><strong>Pulizia dei Dati:</strong> Raggruppamento di valori simili e gestione dei valori mancanti.</li>
+                <li><strong>Codifica e Scaling:</strong> One-hot encoding e standardizzazione delle caratteristiche numeriche.</li>
+                <li><strong>Hyperparameter Tuning:</strong> Utilizzo di GridSearchCV, RandomizedSearchCV e BayesSearchCV.</li>
+            </ul>
+
+            <h3>Modelli Utilizzati e Risultati</h3>
+            <table>
+                <tr><th>Modello</th><th>Punteggio Validazione</th><th>Punteggio Test</th><th>Tempo di Training</th></tr>
+                <tr><td>Logistic Regression</td><td>0.8653</td><td>0.8778</td><td>21s</td></tr>
+                <tr><td>Decision Tree</td><td>0.8499</td><td>0.8567</td><td>22.3s</td></tr>
+                <tr><td>Random Forest</td><td>0.8590</td><td>0.8691</td><td>1m 47.3s</td></tr>
+                <tr><td>SVM</td><td>0.8662</td><td>0.8809</td><td>2m 52.6s</td></tr>
+            </table>
+
+            <p><strong>Risultati Chiave:</strong> L'SVM ha raggiunto la precisione più alta (0.8809) ma è risultato computazionalmente costoso. La Regressione Logistica ha ottenuto risultati quasi altrettanto buoni (0.8778) ma in modo significativamente più veloce.</p>
+        </div>
+    </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcousticMatch - Repository</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body class="lang-it">
+<header>
+    <div class="logo">
+        <strong>SERGIO AVALOS</strong>
+    </div>
+    <nav class="nav-links">
+        <a href="index.html" class="it">Home</a>
+        <a href="index.html" class="en">Home</a>
+        <a href="experience.html" class="it">Esperienza</a>
+        <a href="experience.html" class="en">Experience</a>
+        <a href="studies.html" class="it">Studi</a>
+        <a href="studies.html" class="en">Studies</a>
+        <a href="certifications.html" class="it">Certificazioni</a>
+        <a href="certifications.html" class="en">Certifications</a>
+        <div class="dropdown">
+            <a href="#" class="it">Repository ▼</a>
+            <a href="#" class="en">Repositories ▼</a>
+            <div class="dropdown-content">
+                <a href="acousticmatch.html">AcousticMatch</a>
+                <a href="telegramchatbot.html">Telegram ChatBot</a>
+                <a href="animalink.html">AnimaLink</a>
+                <a href="okcupid.html">OKCupid Gender Prediction</a>
+            </div>
+        </div>
+    </nav>
+    <button id="lang-toggle">ENG</button>
+</header>
+<main>
+    <section class="repo-header">
+        <img src="img/repos/am.png" alt="AcousticMatch">
+        <h1>AcousticMatch: ML Music Recommender</h1>
+        <p class="tech-stack">Tech: HTML, CSS, JavaScript, Python, FastAPI, Uvicorn, Pydantic, Scikit-learn, Pandas, NumPy, Joblib</p>
+        <a href="https://github.com/srg2912/AcousticMatch" target="_blank" class="cert-link">View on GitHub</a>
+    </section>
+    
+    <section class="markdown-body">
+        <div class="en">
+            <h2>About the Project</h2>
+            <p>AcousticMatch is a full-stack, machine learning-powered music recommendation engine. Rather than relying on collaborative filtering (what other users listen to), this application analyzes the actual "sonic DNA" of a track using Spotify's audio features (like Danceability, Energy, Acousticness, and Tempo). By applying dimensionality reduction and nearest-neighbor algorithms, the engine bridges the semantic gap to find songs with a genuinely similar vibe and acoustic profile.</p>
+            
+            <h3>Technologies & Concepts Used</h3>
+            <ul>
+                <li><strong>Backend:</strong> Python, FastAPI, Uvicorn (ASGI server), Pydantic (Data validation).</li>
+                <li><strong>Machine Learning:</strong> Scikit-learn, Pandas, NumPy, Joblib (Model serialization).</li>
+                <li><strong>Frontend:</strong> HTML5, CSS3, Vanilla JavaScript (Fetch API, DOM manipulation).</li>
+                <li><strong>Unsupervised Machine Learning:</strong> Utilizing the K-Nearest Neighbors (KNN) algorithm with cosine distance metrics.</li>
+                <li><strong>Dimensionality Reduction:</strong> Applying Principal Component Analysis (PCA) to compress feature space.</li>
+                <li><strong>Feature Engineering:</strong> Using StandardScaler to normalize disparate data scales.</li>
+                <li><strong>RESTful API Design:</strong> Decoupling the frontend from the machine learning engine using modern, asynchronous endpoints.</li>
+            </ul>
+        </div>
+        <div class="it">
+            <h2>Informazioni sul Progetto</h2>
+            <p>AcousticMatch è un motore di raccomandazione musicale full-stack basato sul machine learning. Invece di affidarsi al filtraggio collaborativo, l'applicazione analizza il "DNA sonoro" di una traccia utilizzando le caratteristiche audio di Spotify (Ballo, Energia, Acustica e Tempo). Applicando algoritmi di riduzione della dimensionalità e dei nearest-neighbor, il motore trova canzoni con un'atmosfera e un profilo acustico genuinamente simili.</p>
+            
+            <h3>Tecnologie e Concetti Utilizzati</h3>
+            <ul>
+                <li><strong>Backend:</strong> Python, FastAPI, Uvicorn, Pydantic.</li>
+                <li><strong>Machine Learning:</strong> Scikit-learn, Pandas, NumPy, Joblib.</li>
+                <li><strong>Frontend:</strong> HTML5, CSS3, Vanilla JavaScript.</li>
+                <li><strong>Machine Learning Non Supervisionato:</strong> Utilizzo dell'algoritmo K-Nearest Neighbors (KNN) con distanza coseno.</li>
+                <li><strong>Riduzione della Dimensionalità:</strong> Applicazione della Principal Component Analysis (PCA).</li>
+                <li><strong>Feature Engineering:</strong> Utilizzo di StandardScaler per normalizzare i dati.</li>
+                <li><strong>Design API RESTful:</strong> Separazione del frontend dal motore ML tramite endpoint asincroni.</li>
+            </ul>
+        </div>
+    </section>
+</main>
+</body>
+</html>
