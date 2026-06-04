@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SonicVault - Repository</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/index.js" defer></script>
+</head>
+<body class="lang-it">
+<header>
+    <div class="logo">
+        <strong>SERGIO AVALOS</strong>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav class="nav-links">
+        <a href="../index.html" class="it">Home</a>
+        <a href="../index.html" class="en">Home</a>
+        <a href="experience.html" class="it">Esperienza</a>
+        <a href="experience.html" class="en">Experience</a>
+        <a href="studies.html" class="it">Studi</a>
+        <a href="studies.html" class="en">Studies</a>
+        <a href="certifications.html" class="it">Certificazioni</a>
+        <a href="certifications.html" class="en">Certifications</a>
+        <div class="dropdown">
+            <a href="#" class="it">Repository ▼</a>
+            <a href="#" class="en">Repositories ▼</a>
+            <div class="dropdown-content">
+                <a href="acousticmatch.html">AcousticMatch</a>
+                <a href="sonicvault.html">SonicVault</a>
+                <a href="animalink.html">AnimaLink</a>
+                <a href="okcupid.html">OKCupid Gender Prediction</a>
+            </div>
+        </div>
+    </nav>
+    <button id="lang-toggle">ENG</button>
+</header>
+<main>
+    <section class="repo-header">
+        <img src="../img/repos/sv.png" alt="SonicVault">
+        <h1>Self-Hosted Media Infrastructure</h1>
+        <p class="tech-stack">Tech: Docker, Docker Compose, Linux, Cloudflare, Navidrome, AdGuard Home, Bash, Subsonic API</p>
+    </section>
+    
+    <section class="markdown-body">
+        <div class="en">
+            <h2>About the Project</h2>
+            <p>A comprehensive self-hosted media infrastructure built from the ground up using repurposed hardware. This project demonstrates full-stack infrastructure management, from physical assembly to secure remote access. A custom-built PC serves as a dedicated media server running Navidrome via Docker Compose, exposing a personal music library through the Subsonic API to any client, anywhere. Remote access is secured through a Cloudflare Tunnel, eliminating the need for public IP exposure or port forwarding. The same machine doubles as a living-room media center, connected directly to a TV and configured with a restricted user account for safe daily use. The browsing experience is hardened through a network-wide AdGuard Home instance blocking ads and malicious domains, with Brave browser deployed for additional privacy.</p>
+            
+            <h3>Features & Infrastructure</h3>
+            <ul>
+                <li><strong>Custom Hardware Assembly:</strong> Built a fully functional server from spare and recycled components, including diagnostics and compatibility testing.</li>
+                <li><strong>Navidrome Music Server:</strong> Containerized deployment via Docker Compose with persistent volumes and automated restart policies.</li>
+                <li><strong>Custom Domain & Cloudflare Integration:</strong> DNS management and Tunnel configuration for secure, global access without exposing the home network.</li>
+                <li><strong>Zero-Trust Remote Access:</strong> Cloudflare Tunnel provides encrypted connectivity without opening router ports or relying on dynamic DNS.</li>
+                <li><strong>Subsonic API:</strong> Full compatibility with any Subsonic client, enabling private music streaming on any device from any location.</li>
+                <li><strong>Media Center Workstation:</strong> Direct TV connectivity with a dedicated, non-privileged user environment for safe daily media consumption.</li>
+                <li><strong>Network-Wide Ad Blocking:</strong> AdGuard Home DNS server filtering ads, trackers, and harmful content across all connected devices.</li>
+                <li><strong>Privacy-Hardened Browsing:</strong> Brave browser deployment with built-in tracker blocking and HTTPS-Everywhere enforcement.</li>
+            </ul>
+        </div>
+        <div class="it">
+            <h2>Informazioni sul Progetto</h2>
+            <p>Un'infrastruttura media self-hosted costruita da zero utilizzando hardware riciclato. Questo progetto dimostra la gestione infrastrutturale full-stack, dall'assemblaggio fisico all'accesso remoto sicuro. Un PC custom serve come server media dedicato con Navidrome tramite Docker Compose, esponendo una libreria musicale personale tramite API Subsonic a qualsiasi client, ovunque. L'accesso remoto è protetto tramite Cloudflare Tunnel, eliminando la necessità di esporre IP pubblici o aprire porte sul router. La stessa macchina funge anche da media center in soggiorno, collegata direttamente a una TV e configurata con un account utente limitato per un utilizzo quotidiano sicuro. L'esperienza di navigazione è rafforzata da un'istanza AdGuard Home a livello di rete che blocca pubblicità e domini malevoli, con il browser Brave per una privacy aggiuntiva.</p>
+            
+            <h3>Caratteristiche e Infrastruttura</h3>
+            <ul>
+                <li><strong>Assemblaggio Hardware Custom:</strong> Costruito un server funzionale da componenti spare/riciclati, inclusa diagnostica e test di compatibilità.</li>
+                <li><strong>Server Musicale Navidrome:</strong> Deploy containerizzato via Docker Compose con volumi persistenti e policy di riavvio automatico.</li>
+                <li><strong>Dominio Custom e Integrazione Cloudflare:</strong> Gestione DNS e configurazione Tunnel per accesso sicuro globale senza esporre la rete domestica.</li>
+                <li><strong>Accesso Remoto Zero-Trust:</strong> Cloudflare Tunnel offre connettività crittografata senza aprire porte sul router o affidarsi a DNS dinamici.</li>
+                <li><strong>API Subsonic:</strong> Piena compatibilità con qualsiasi client Subsonic per lo streaming privato su qualsiasi dispositivo e da qualsiasi luogo.</li>
+                <li><strong>Workstation Media Center:</strong> Connettività TV diretta con un ambiente utente dedicato e non privilegiato per una fruizione media sicura.</li>
+                <li><strong>Blocco Pubblicità a Livello Rete:</strong> Server DNS AdGuard Home che filtra pubblicità, tracker e contenuti dannosi su tutti i dispositivi connessi.</li>
+                <li><strong>Navigazione Rinforzata per la Privacy:</strong> Deploy del browser Brave con blocco tracker integrato e forzatura HTTPS.</li>
+            </ul>
+        </div>
+    </section>
+</main>
+</body>
+</html>
